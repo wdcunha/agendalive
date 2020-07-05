@@ -9,8 +9,11 @@ import {RouterModule} from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { LiveListComponent } from './views/home/live-list/live-list.component';
+import {LiveListComponent} from './views/home/live-list/live-list.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {HttpClientModule} from '@angular/common/http';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -23,10 +26,13 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
